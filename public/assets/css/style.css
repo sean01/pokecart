@@ -1,0 +1,68 @@
+
+
+.flex{
+	display: flex;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.flex-1{
+	flex: 1;
+}
+
+.flex-j-between{
+	justify-content: space-between;
+}
+
+.flex-a-center{
+	align-items: center;
+}
+
+.push{
+	padding:2em;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+ul{
+	margin-top: 1em;
+}
+
+h1, h3{
+	margin: 0.67em 0;
+	margin-right: 10px;
+}
+
+
+
+.product{
+	width: calc(33% - 2em);
+	margin: 1em;
+}
+
+.products{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.fixed{
+	flex-direction: column;
+}
+
+.fixed-b{
+	position: relative;
+}
+
+.table>tbody>tr>td{
+	vertical-align: middle;
+}
