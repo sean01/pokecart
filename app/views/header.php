@@ -54,7 +54,7 @@
 						<form class="navbar-form navbar-left" action="/search.php">
 							
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search" name="keywords">
+								<input type="text" class="form-control" placeholder="Search" name="keywords" value="<?= Route::param('keywords') ?>">
 							</div>
 
 							<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>

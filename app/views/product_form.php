@@ -19,7 +19,7 @@
 		<div class="form-group">
 			<div class="flex flex-a-center">
 				<? if(Sticky::get('image')): ?>
-					<img src="<?= url(Sticky::get('image')) ?>" width="96" height="96">
+					<img src="/<?= Sticky::get('image') ?>" width="96" height="96">
 				<? endif; ?>
 						
 				

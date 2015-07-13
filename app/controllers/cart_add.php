@@ -15,6 +15,7 @@ if(AJAX){
 	]);
 }else{
 	
-URL::redirect('/cart'));
+URL::redirect('/cart');
+
 }
 
