@@ -68,7 +68,7 @@ $(function(){
 							$(this).addClass('hide');
 						}
 					});
-					// .addClass('hide')
+					
 
 				
 			}, 5*1000)
