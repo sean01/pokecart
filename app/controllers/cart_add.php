@@ -14,7 +14,8 @@ if(AJAX){
 		'name' => $product->name,
 		'image' => $product->image,
 		'id' => $product->id,
-		'price' =>$product->price
+		'price' =>$product->price,
+		'sub' => Cart::get_subtotal() + $product->price
 
 		
 	]);

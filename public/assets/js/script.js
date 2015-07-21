@@ -16,6 +16,8 @@ $(function(){
 
 $(function(){
 
+	var notificationTimer = null;
+
 
 	// yo, make sure your add to cart button has the add-to-cart class
 	$('.add-to-cart').on('click', function(e){
@@ -41,6 +43,7 @@ $(function(){
 			$('.productImg').attr('src', data.image);
 			$('.productLink').attr('href', '/product/' + data.id + '/view');
 			$('.productPrice').text('$' + data.price);
+			$('.productSub').text(data.sub);
 
 	
 
@@ -50,10 +53,12 @@ $(function(){
 					.removeClass('hide')
 					.removeClass('slideOutUp')
 					.addClass('slideInDown')
+
+			clearTimeout(notificationTimer);
 					
 
 			//sleep 5s
-			setTimeout(function(){
+			notificationTimer = setTimeout(function(){
 
 				$('.notification-cart')
 					.removeClass('slideInDown')

@@ -64,7 +64,8 @@
 								<a href="" class="productLink">
 									<img src="" alt="" class="productImg">
 								</a>
-								<h2 class="productPrice"></h2>
+								<h2 class="productPrice"> </h2>
+								<h2 class="productSub"></h2>
 							</div>
 						</div>
 					</li>
