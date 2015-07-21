@@ -102,6 +102,24 @@ class Cart{
 		return $amount;
 	}
 
+	/**
+	*
+	* Get subtotal
+	*
+	* This doesn't work..
+	**/
+	public static function get_subtotal(){
+		self::create_cart();
+
+		$amount = 0;
+
+		foreach(self::$products as $product){
+			$amount + $product->price;
+		}
+
+		return $amount;
+	}
+
 
 	/**
 	*

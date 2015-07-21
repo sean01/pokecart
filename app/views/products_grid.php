@@ -5,7 +5,7 @@
 			<? foreach($products->items as $product) : ?> 
 				<div class="product thumbnail flex flex-column">
 					<h3><?= $product->name ?></h3>
-					<img src="/<?= $product->image ?>" alt="" width="215" height="215"></a>
+					<a href="product/<?=$product->id?>/view"><img src="/<?= $product->image ?>" alt="" width="215" height="215"></a>
 					<div class="caption flex flex-column flex-j-between flex-1">									
 						<p><?= myTruncate($product->description, 200, " "); ?></p>
 						<p><a href="product/<?=$product->id?>/view">Read More</a></p>

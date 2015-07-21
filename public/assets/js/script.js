@@ -25,7 +25,7 @@ $(function(){
 		var href = $(this).attr('href');
 
 		$.ajax({
-			type: 'get',
+			method: 'get',
 			url: href,
 			dataType: 'json'
 		})
@@ -34,6 +34,45 @@ $(function(){
 			console.log(data);
 
 			$('.cart-count').text(data.count);
+
+			//AJAX stuff here?
+			// $('.notification-cart').data()
+			$('.productName').text(data.name);
+			$('.productImg').attr('src', data.image);
+			$('.productLink').attr('href', '/product/' + data.id + '/view');
+			$('.productPrice').text('$' + data.price);
+
+	
+
+
+				//animate css with hide
+				$('.notification-cart')
+					.removeClass('hide')
+					.removeClass('slideOutUp')
+					.addClass('slideInDown')
+					
+
+			//sleep 5s
+			setTimeout(function(){
+
+				$('.notification-cart')
+					.removeClass('slideInDown')
+					.addClass('slideOutUp')
+					.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						if($(this).hasClass('slideOutUp')){
+							$(this).addClass('hide');
+						}
+					});
+					// .addClass('hide')
+
+				
+			}, 5*1000)
+
+				
+
+
+
+
 			
 		});
 
@@ -41,4 +80,3 @@ $(function(){
 
 
 });
-
