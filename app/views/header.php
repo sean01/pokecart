@@ -62,10 +62,10 @@
 							<div class="notification-cart hide animated">
 								<h2 class="productName"></h2>
 								<a href="" class="productLink">
-									<img src="" alt="" class="productImg">
+									<img src="" alt="" height="94" width="94" class="productImg">
 								</a>
-								<h2 class="productPrice"> </h2>
-								<h2 class="productSub"></h2>
+								<h4 class="productPrice"></h4>
+								<h4 class="productSub"></h4>
 							</div>
 						</div>
 					</li>

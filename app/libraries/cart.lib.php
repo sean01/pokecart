@@ -106,7 +106,6 @@ class Cart{
 	*
 	* Get subtotal
 	*
-	* 
 	**/
 	public static function get_subtotal(){
 		self::create_cart();

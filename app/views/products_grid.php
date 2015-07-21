@@ -14,7 +14,7 @@
 							
 
 							<? if(Auth::is_logged_in()) : ?>
-							<a href="cart/add/<?=$product->id ?>" class="btn btn-primary add-to-cart" role="button">
+							<a href="/cart/add/<?=$product->id ?>" class="btn btn-primary add-to-cart" role="button">
 								<i class="fa fa-shopping-cart"></i> Add to Cart
 							</a>
 

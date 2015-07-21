@@ -54,8 +54,13 @@
 				<td></td>
 			</tr>
 
-	</table>
 
-	<a href="/cart/clear" class="btn btn-warning">Clear Cart</a>
+
 	
+		<tr>
+			<td colspan="5"><a href="/cart/clear" class="btn btn-warning">Clear Cart</a></td>
+			<td><a href="/cart/checkout" class="btn btn-success">Checkout</a></td>
+			
+		</tr>
+	</table>
 </div>
