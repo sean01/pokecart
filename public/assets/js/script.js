@@ -1,3 +1,5 @@
+
+// warning on setting price below $1 when adding a product
 $(function(){
 	
 	// give a class of "product" to your form tag on the product_form view
@@ -12,9 +14,6 @@ $(function(){
 		}
 	});
 
-});
-
-$(function(){
 
 	var notificationTimer = null;
 
@@ -45,7 +44,7 @@ $(function(){
 			$('.productRemove').attr('href', '/cart/remove/' + data.id + '/notification');
 			$('.productPrice').text('Price: $' + data.price);
 			$('.productSub').text('Cart Subtotal: $' + data.sub);
-			$('.productQty').text('(' + data.qty + ')');
+			$('.productQty').text(' (' + data.qty + ')');
 
 	
 
@@ -75,13 +74,41 @@ $(function(){
 				
 			}, 5*1000)
 
-				
-
-
-
-
 			
 		});
+
+	});
+
+
+
+
+	// yo, make sure your add to cart button has the add-to-cart class
+	$('.remove-from-cart').on('click', function(e){
+		// don't go anywhere
+		e.preventDefault();
+
+		var href = $(this).attr('href');
+
+		$.ajax({
+			method: 'get',
+			url: href,
+			dataType: 'json'
+		})
+		.done(function(data){
+
+			console.log(data);
+			
+			$('.cart-count').text(data.count);
+
+			$('.productName').text(data.name);
+			$('.productImg').attr('src', '/' + data.image);
+			$('.productLink').attr('href', '/product/' + data.id + '/view');
+			$('.productRemove').attr('href', '/cart/remove/' + data.id + '/notification');
+			$('.productPrice').text('Price: $' + data.price);
+			$('.productSub').text('Cart Subtotal: $' + data.sub);
+			$('.productQty').text(' (' + data.qty + ')');
+
+			});
 
 	});
 

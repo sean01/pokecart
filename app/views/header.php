@@ -59,7 +59,7 @@
 					</li>
 					<li>
 						<div class="notification ">
-							<div class="notification-cart animated">
+							<div class="notification-cart hide animated">
 								<h2 class="productName"></h2>
 								<div class="flex flex-a-center flex-j-between">
 									<a href="" class="productLink"><img src="" alt="" height="94" width="94" class="productImg"></a>
@@ -71,7 +71,7 @@
 								
 								<div class="whiteHover flex flex-j-between">
 									<h6><a href="/cart" class="flex-1">View Cart</a></h6>
-									<h6><a href="" class="flex-1 productRemove">Remove Cart<span class="productQty"></span></a></h6>
+									<h6><a href="" class="flex-1 productRemove remove-from-cart">Remove Cart<span class="productQty"></span></a></h6>
 								</div>
 								
 							</div>

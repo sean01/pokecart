@@ -80,11 +80,16 @@ class Cart{
 		self::create_cart();
 		
 		if(!$id) return;
+		if($qty < 1) return;
 
 		$qty = intval($qty) < intval($max) ? intval($qty) : intval($max);
 
 		$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = $qty;
 	}
+
+
+
+	
 
 	public static function get_quantity($id){
 		self::create_cart();
