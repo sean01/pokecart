@@ -39,8 +39,11 @@ Route::post('/product/:id/view', CONTROLLERS.'view_product.php');
 Route::get('/cart', CONTROLLERS.'cart_view.php');
 Route::get('/cart/clear', CONTROLLERS.'cart_clear.php');
 Route::get('/cart/remove/:id', CONTROLLERS.'cart_remove.php');
+Route::get('/cart/remove/:id/notification', CONTROLLERS.'cart_remove_notification.php');
 Route::post('/cart/update/:id', CONTROLLERS.'cart_update.php');
 Route::get('/cart/add/:id', CONTROLLERS.'cart_add.php');
+
+
 
 
 // SEARCH

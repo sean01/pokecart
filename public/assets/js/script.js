@@ -42,8 +42,10 @@ $(function(){
 			$('.productName').text(data.name);
 			$('.productImg').attr('src', '/' + data.image);
 			$('.productLink').attr('href', '/product/' + data.id + '/view');
-			$('.productPrice').text('Price: ' + '$' + data.price);
-			$('.productSub').text('Cart Subtotal: '+ '$' + data.sub);
+			$('.productRemove').attr('href', '/cart/remove/' + data.id + '/notification');
+			$('.productPrice').text('Price: $' + data.price);
+			$('.productSub').text('Cart Subtotal: $' + data.sub);
+			$('.productQty').text('(' + data.qty + ')');
 
 	
 

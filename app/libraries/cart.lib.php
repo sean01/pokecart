@@ -32,15 +32,24 @@ class Cart{
 	*	@param int $qty quantity the user wants to order
 	*
 	**/
-	public static function add_product($id, $qty){
+	public static function add_product($id, $qty, $max){
 		self::create_cart();
 		
 		if(!$id) return;
 
+		$qty = intval($qty) < intval($max) ? intval($qty) : intval($max);
+
 		if(isset($_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id])){
-			$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] += intval($qty);
+
+			$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] += $qty;
+			
+			if($_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] > intval($max)){
+				$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = $max;
+			}
+
+			
 		}else{
-			$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = intval($qty);
+			$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = $qty;
 		}
 		
 	}
@@ -67,12 +76,20 @@ class Cart{
 	*	@param int $qty The new quantity amount to set
 	*
 	**/
-	public static function set_quantity($id, $qty){
+	public static function set_quantity($id, $qty, $max){
 		self::create_cart();
 		
 		if(!$id) return;
 
-		$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = intval($qty);
+		$qty = intval($qty) < intval($max) ? intval($qty) : intval($max);
+
+		$_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id] = $qty;
+	}
+
+	public static function get_quantity($id){
+		self::create_cart();
+
+		return $_SESSION[Config::$sitename]['cart'][Auth::user_id()][$id];
 	}
 
 

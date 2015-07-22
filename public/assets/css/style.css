@@ -69,16 +69,16 @@ h1, h3{
 
 .notification{
 	position: fixed;
-	top: 0px;
+	top: -5px;
 	right: 60px;
 	z-index: 9;
 	width: 215px;
 }
 
 .notification-cart{
-	background: #eee;
+	background: #333;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	color: #333;
+	color: #eee;
 	padding: 1em;
 
 
@@ -92,4 +92,14 @@ h1, h3{
 
 .hide{
 	display: none;
+}
+
+.show{
+	display: visible;
+}
+
+
+.whiteHover a:hover{
+	color: #eee
+
 }

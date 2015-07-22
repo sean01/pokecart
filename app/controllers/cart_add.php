@@ -1,13 +1,14 @@
 <?php 
+
+$product = new Product();
+$product->load(Route::param('id'));
+
 #1.
-Cart::add_product(Route::param('id'), 1);
+Cart::add_product(Route::param('id'), 1, $product->cart_max);
 
 #2. LOAD VIEWS
 if(AJAX){
-	$product = new Product();
-	$product->load(Route::param('id'));
-
-
+	
 	echo json_encode([
 		'success' => true,
 		'count' => (Cart::get_total()+1),
@@ -15,7 +16,8 @@ if(AJAX){
 		'image' => $product->image,
 		'id' => $product->id,
 		'price' =>$product->price,
-		'sub' => Cart::get_subtotal() + $product->price
+		'sub' => Cart::get_subtotal() + $product->price,
+		'qty' => Cart::get_quantity($product->id)
 
 		
 	]);
