@@ -9,7 +9,7 @@ if(AJAX){
 	
 	echo json_encode([
 		'success' => true,
-		'count' => (Cart::get_total()),
+		'count' => (Cart::get_total()-1),
 		'name' => $product->name,
 		'image' => $product->image,
 		'id' => $product->id,

@@ -51,6 +51,10 @@ Route::get('/cart/add/:id', CONTROLLERS.'cart_add.php');
 Route::get('/search/:keywords', CONTROLLERS.'search.php');
 
 
+// CONTACT US
+
+Route::get('/contact', CONTROLLERS.'contact_us.php');
+
 
 
 
