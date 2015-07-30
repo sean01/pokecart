@@ -11,6 +11,7 @@
 					  <abbr title="Phone">P:</abbr> (123) 456-7890
 					</address>
 				</div>
+<<<<<<< HEAD
 				
 				<div class="flex-1">				
 					<p><strong>Follow us</strong></p>
@@ -31,6 +32,15 @@
 					
 				</div>
 			</div>
+=======
+				<div class="flex-1">
+					<p><strong>Follow us</strong></p>
+					<a href="http://facebook.com" title="Follow us on Facebook!"><i class="fa fa-facebook"></i></a>
+				</div>
+			</div>
+			
+
+>>>>>>> origin/master
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
