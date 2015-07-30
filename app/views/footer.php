@@ -12,7 +12,8 @@
 					</address>
 				</div>
 				<div class="flex-1">
-					
+					<p><strong>Follow us</strong></p>
+					<a href="http://facebook.com" title="Follow us on Facebook!"><i class="fa fa-facebook"></i></a>
 				</div>
 			</div>
 			

@@ -90,26 +90,8 @@
 		<div class="container">
 				<div class="">
 					<ul class="nav nav-pills navbar-center flex flex-j-between">
-						<li><a href="">Pokemon</a>
-							<!-- <ul>
-								<li><a href=""></a>Grass</li>
-								<li><a href=""></a>Fire</li>
-								<li><a href=""></a>Water</li>
-								<li><a href=""></a>Electric</li>
-								<li><a href=""></a>Rock</li>  
-								<li><a href=""></a>Psychic</li>
-							</ul> -->
-							
-						</li>			
-						<li><a href="">Accessories</a>
-							<!-- <ul>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-							</ul> -->
-						</li>				
+						<li><a href="">Pokemon</a></li>			
+						<li><a href="">Accessories</a></li>				
 						<li><a href="">Home & Decor</a></li>				
 						<li><a href="">TMs/HMs</a></li>				
 						<li><a href="">Battle Items</a></li>				
