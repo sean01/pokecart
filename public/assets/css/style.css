@@ -31,44 +31,34 @@
 .center{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	
+	align-items: center;	
 }
-
-<<<<<<< HEAD
 .divider{
 	border-left: 1px solid #333;
 	height: 100px;  
 	margin-left: 15px;
-=======
+}
+textarea.textArea{
+	max-width: 350px;
+	height: 190px;
+}
+
+
+header{
+	width: 100%;
+}
+
+
 body{
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	align-items: flex-start;
->>>>>>> origin/master
 }
 
-header{
-	width: 100%;
-}
 
-<<<<<<< HEAD
-body{
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	align-items: flex-start;
-}
 
-header{
-	width: 100%;
-}
-
-=======
->>>>>>> origin/master
 .main{
 	width: 100%;
 	flex: 1;
@@ -76,10 +66,9 @@ header{
 
 footer{
 	width: 100%;
-<<<<<<< HEAD
 	padding-bottom: 10px;
-=======
->>>>>>> origin/master
+
+
 }
 
 .navbar-default ul{
@@ -173,7 +162,6 @@ h1, h3{
 
 }
 
-<<<<<<< HEAD
 /* 
 *
 * Content Wrapper
@@ -254,8 +242,3 @@ h1, h3{
 	width: 360px;
 	height: 360px; 
 }
-=======
-
-
->>>>>>> origin/master
-

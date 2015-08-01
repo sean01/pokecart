@@ -1,6 +1,6 @@
 <div class="container">
 	
-	<h2 class="col-md-4 col-md-offset-4">Contact Us</h2>
+	<h2 class="col-md-4 col-md-offset-4">Login</h2>
 
 	<hr>
 
@@ -8,21 +8,16 @@
 		
 		<div class="form-group">
 			<?=Form::label('username', 'Username:')?>
-			<?=Form::text('username', ['class' => 'form-control'])?>
+			<?=Form::text('username', Sticky::get('username'), ['class' => 'form-control'])?>
 		</div>
 
 		<div class="form-group">
 			<?=Form::label('password', 'Password:')?>
-			<?=Form::password('password', ['class' => 'form-control'])?>
+			<?=Form::password('password', Sticky::get(''), ['class' => 'form-control'])?>
 		</div>
 
 		<div class="form-group">
-			<?=Form::label('message', 'Message:')?>
-			<?=Form::textarea('message', ['class' => 'form-control'])?>
-		</div>
-
-		<div class="form-group">
-			<?= Form::label('Send') ?>
+			<?= Form::submit('Login', ['class' => 'btn btn-primary']) ?>
 		</div>
 	<?= Form::close() ?>
 

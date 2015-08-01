@@ -6,7 +6,7 @@
 
 	<?= Form::open('', 'post', ['class' => 'col-md-4 col-md-offset-4'])?>
 		
-		<div class="form-group ">
+		<div class="form-group">
 			<?=Form::label('username', 'Username')?>
 			<?=Form::text('username', Sticky::get('username'), ['class' => 'form-control'])?>
 		</div>

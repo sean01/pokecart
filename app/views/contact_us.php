@@ -1,26 +1,26 @@
 <div class="container">
 	<div>
-		<h2>Contact Us!</h2>
+		<h2 class="flex flex-1">Contact Us!</h2>
 
 		<hr>
 		
 		<p>Send us a message!</p>
-		<div class="flex flex-1 push-right">
+		
 			<?= Form::open('', 'post', ['class' => 'col-md-4']) ?>
 			
 				<div class="form-group">
 					<?=Form::label('fname', 'Your name:')?>
-					<?=Form::text('fname', ['class' => 'form-control'])?>
+					<?=Form::text('fname', Sticky::get(''), ['class' => 'form-control'])?>
 				</div>
 
 				<div class="form-group">
-					<?=Form::label('email', 'Email')?>
-					<?=Form::email('email', ['class' => 'form-control'])?>
+					<?=Form::label('email', 'Your email:')?>
+					<?=Form::email('email', Sticky::get('email'), ['class' => 'form-control'])?>
 				</div>
 
 				<div class="form-group">
-					<?=Form::label('message', 'Message')?>
-					<?=Form::textarea('message', ['class' => 'form-control '])?>
+					<?=Form::label('message', 'Your message:')?>
+					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control textArea'])?>
 				</div>
 
 				<div class="form-group">
@@ -32,7 +32,7 @@
 		
 		
 			<div class="flex flex-1" id="googleMap"></div>
-		</div>			
+					
 	</div>
 </div>
 	
