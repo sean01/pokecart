@@ -16,7 +16,7 @@
 
 			<? else: ?>
 				
-				<a href="/login" class="btn btn-primary larger-button">Log in to buy</a>
+				<a href="/login" class="btn btn-primary larger-button">Login to buy</a>
 			<? endif ?>
 
 			</div>
@@ -40,8 +40,8 @@
 			</div>			
 			<? endforeach; ?> 	
 		<? else: ?>
-			<h3 class="container center">Currently no reviews posted. Why not post one!</h3>
-			<a href="/login" class="container center">Log in to comment</a>
+			<h3 class="container center">Currently no reviews posted. Why not post one?</h3>
+			<a href="/login" class="container center">Login to comment</a>
 		<? endif ; ?>
 	</div>
 		</div>	
