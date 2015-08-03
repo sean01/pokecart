@@ -2,5 +2,10 @@
 
 class Comment extends model{
 
-	protected $table = 'comments';
+	public $table = 'comments';
+
+	public function author(){
+
+		return $this->belongsTo('User');
+	}
 }

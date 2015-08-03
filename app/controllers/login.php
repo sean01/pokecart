@@ -21,6 +21,7 @@ if(Input::posted()){
 	if($success){
 		Auth::log_in($user->id, $user->is_admin);
 
+		URL::restore();
 		URL::redirect('/admin');
 	}
 }

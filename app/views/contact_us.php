@@ -6,7 +6,7 @@
 		
 		<p>Send us a message!</p>
 		
-			<?= Form::open('', 'post', ['class' => 'col-md-4']) ?>
+			<?= Form::open('', 'post', ['class' => 'col-md-4 contact-form']) ?>
 			
 				<div class="form-group">
 					<?=Form::label('fname', 'Your name:')?>

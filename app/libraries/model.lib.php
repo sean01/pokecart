@@ -13,14 +13,16 @@
 
 require_once 'config.lib.php';
 require_once 'database.lib.php';
+require_once 'xss.lib.php';
+require_once 'collection.lib.php';
 
-class Model{
+class Model {
 
-	protected $fields        = array();
+	public    $fields        = array();
+	public    $primary_key   = 'id';
+	public    $table         = '';
 	protected $data          = array();
 	protected $db            = null;
-	protected $primary_key   = 'id';
-	protected $table         = '';
 	protected $check_fields  = true;
 
 	/**
@@ -64,17 +66,10 @@ class Model{
 	*
 	*/
 	function __get($var){
-		if(isset($this->data[$var])){
-			if(class_exists('XSS')){
-				return XSS::filter($this->data[$var]);
-			}else{
-				if(file_exists('../libraries/xss.lib.php')){
-					require_once 'xss.lib.php';
-					return XSS::filter($this->data[$var]);
-				}else{
-					return $this->data[$var];
-				}
-			}
+		if(method_exists($this, $var)){
+			return $this->$var();
+		}else if(isset($this->data[$var])){
+			return XSS::filter($this->data[$var]);
 		}else{
 			return false;
 		}
@@ -146,20 +141,35 @@ class Model{
 	*
 	*/
 	public function load($data){
-		
+			
 		$this->db->select('*')->from($this->table);
 		
-		if(is_array($data)){
+		if (is_array($data)) {
 			$this->db->where($data);
-		}else{
+		} else {
 			$this->db->where($this->primary_key, $data);
 		}
 		
-		$result = $this->db->get_one();
-
-		$this->data = $result;
+		$q = $this->db->build_query();
 		
-		return $this;
+		if (Model_Provider::has($q)) {
+			$this->db->reset();
+			
+			$obj = Model_Provider::get($q);
+			// echo "<div class='alert alert-success'>$q</div>";
+			
+			$this->fill($obj->to_array());
+			
+			return $obj;
+		} else {
+			$result = $this->db->get_one();
+
+			$this->data = $result;
+			
+			Model_Provider::set($this->db->last_query, $this);
+			
+			return $this;
+		}
 	}
 
 	/**
@@ -265,6 +275,136 @@ class Model{
 			return false;
 		}
 	}
+	
+	
+	public function hasOne($model, $foreign_key = null, $local_key = null){
+		$m = new $model();
+		
+		# assume the local_key
+		if(is_null($foreign_key)){
+			$foreign_key = strtolower(get_class($this)).'_id';
+		}
+		
+		if(is_null($local_key)){
+			$local_key = $m->primary_key;
+		}
+		
+		$m->load([$foreign_key => $this->$local_key]);
+		
+		return $m;
+	}
+	
+
+	public function belongsTo($model, $local_key = null, $parent_key = null){
+		$m = new $model();
+		
+		if(is_null($parent_key)){
+			$parent_key = strtolower($model).'_id';
+		}
+		
+		if(is_null($local_key)){
+			$local_key = $m->primary_key;
+		}
+		
+		$m->load([$local_key => $this->$parent_key]);
+		
+		return $m;
+	}
+	
+	
+	public function hasMany($model, $foreign_key = null, $where = []){
+		$c = new Collection();
+		
+		if(is_null($foreign_key)){
+			$foreign_key = strtolower($model)+'_id';
+		}
+		
+		$id = $this->primary_key;
+		
+		$c->where($foreign_key, $this->$id);
+		$c->where($where);
+		
+		$c->get($model);
+		
+		return $c->items;
+	}
+	
+	public function belongsToMany($model, $join_table, $this_id = null, $that_id = null, $where = []){
+		
+		$m = new $model();
+		
+		if(is_null($this_id)){
+			$this_id = strtolower(get_class($this)).'_id';
+		}
+		
+		if(is_null($that_id)){
+			$that_id = strtolower($model).'_id';
+		}
+		
+		$id = $this->primary_key;
+		
+		$fields = [];
+		
+		foreach($m->fields as $field){
+			$fields[] = $m->table.'.'.$field;
+		}
+		
+		$this->db
+			->select(implode(', ', $fields))
+			->from(implode(', ', [$join_table, $m->table, $this->table]))
+			->where($m->table.'.'.$m->primary_key, $join_table.'.'.$that_id, false)
+			->where($this->table.'.'.$this->primary_key, $join_table.'.'.$this_id, false)
+			->where($this->table.'.'.$this->primary_key, $this->$id)
+			->where($where);
+			
+		$q = $this->db->build_query();
+		
+		if(Model_Provider::has($q)){
+			// echo "<div class='alert alert-success'>$q</div>";
+			return Model_Provider::get($q);
+		} else {
+			$results = $this->db->get();
+			$items = [];
+			
+			foreach($results as $result){
+				$m = new $model();
+				
+				$m->fill($result);
+				
+				$items[] = $m;
+			}
+			
+			Model_Provider::set($q, $items);
+			
+			return $items;
+		}
+		
+		
+	}
+
+
+	public function to_array(){
+		$data = $this->data;
+		
+		if(!$data){
+			$data = [];
+		}
+		
+		foreach($data as $key => $val){
+			$data[$key] = XSS::filter($val);
+		}
+		
+		return $this->data;
+	}
+	
+	public function __TOSTRING(){
+		return json_encode($this->to_array());
+	}
+	
+	public function to_json(){
+		return $this->__TOSTRING();
+	}
+
 
 }
 
@@ -279,6 +419,23 @@ class Field_Provider {
 		}
 		
 		return self::$tables[$name];
+	}	
+}
+
+class Model_Provider {
+	
+	private static $queries = [];
+	
+	public static function set($query, $data){
+		self::$queries[$query] = $data;
+	}
+	
+	public static function has($query){
+		return isset(self::$queries[$query]);
+	}
+	
+	public static function get($query){
+		return self::$queries[$query];
 	}
 	
 }

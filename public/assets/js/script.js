@@ -116,12 +116,23 @@ $(function(){
 });
 
 function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
- 
-   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var myLatlng = new google.maps.LatLng(-36.848460, 174.763332);
+
+	var mapProp = {
+		center:new google.maps.LatLng(-36.848460, 174.763332),
+		zoom: 20,
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+	};
+
+
+
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title: 'Saffron City, Route 8'
+	});
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+	
+	google.maps.event.addDomListener(window, 'load', initialize);

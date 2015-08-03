@@ -271,6 +271,13 @@ p.large-price{
 
 
 #googleMap{	
-	width: 360px;
-	height: 360px; 
+	width: 40em;
+	height: 32.5em; 
+}
+
+.contact-form{
+	box-sizing: content-box;
+	padding-right: 3em;
+	margin-right: 3em;
+	border-right: 1px solid #333;
 }

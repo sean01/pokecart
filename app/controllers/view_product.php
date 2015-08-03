@@ -7,6 +7,9 @@ $product = new Product();
 $product->load(Route::param('id'));
 
 
+URL::save();
+
+
 
 #2. Load Views
 

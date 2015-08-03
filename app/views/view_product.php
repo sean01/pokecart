@@ -31,20 +31,29 @@
 			<h3>Reviews</h3>
 
 			<div class="products">
-		<? if($comments->items) : ?>
-			<? foreach($comments->items as $comment) : ?> 
-				<div class="product thumbnail flex flex-column">
-					<h3><?= $comment->username ?></h3>
+
+			<?= Form::open() ?>
+				
+			<?= Form::close() ?>
+
+		<? if(count($product->comments)) : ?>
+			<? foreach($product->comments as $comment) : ?> 
+				<div class="thumbnail">
+					<h3><?= ucfirst($comment->author->username)  ?></h3>
+					<p>at <?= date('g:ia y/m/d', strtotime($comment->date_time)) ?></p>
 					<p><?= $comment->comment ?></p>
 				</div>
 			</div>			
 			<? endforeach; ?> 	
 		<? else: ?>
 			<h3 class="container center">Currently no reviews posted. Why not post one?</h3>
-			<a href="/login" class="container center">Login to comment</a>
-		<? endif ; ?>
-	</div>
-		</div>	
+			<? if(!Auth::is_logged_in()): ?>
+				<a href="/login" class="container center">Login to comment</a>
+			<? endif; ?>
+		<? endif; ?>
+		
+		</div>
+		
 	</div>
 </div>
 

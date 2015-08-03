@@ -2,7 +2,7 @@
 
 class User extends model{
 
-	protected $table = 'users';
+	public $table = 'users';
 
 	public function authenticate(){
 		# $this->username is the username that was typed into the form

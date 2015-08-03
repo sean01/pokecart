@@ -1,8 +1,13 @@
 <?php 
 
-class Product extends model{
+class Product extends Model{
 
-	protected $table = 'products';
+	public $table = 'products';
+
+	public function comments(){
+		return $this->hasMany('Comment', 'product_id');
+	}
+
 }
 
 
