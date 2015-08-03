@@ -36,6 +36,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="/assets/js/jquery.noty.packaged.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="//tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+	
 	<script src="/assets/js/script.js"></script>
 </body>
 </html>

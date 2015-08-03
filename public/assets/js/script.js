@@ -136,3 +136,10 @@ function initialize() {
 }
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
+
+
+
+	tinymce.init({
+		selector: 'textarea',
+		toolbar: 
+	});

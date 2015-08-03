@@ -33,7 +33,10 @@
 			<div class="products">
 
 			<?= Form::open() ?>
-				
+				<div class="form-group">
+					<?=Form::label('message', 'New Post')?>
+					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control '])?>
+				</div>
 			<?= Form::close() ?>
 
 		<? if(count($product->comments)) : ?>
@@ -51,7 +54,7 @@
 				<a href="/login" class="container center">Login to comment</a>
 			<? endif; ?>
 		<? endif; ?>
-		
+
 		</div>
 		
 	</div>
