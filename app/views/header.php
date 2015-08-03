@@ -32,7 +32,7 @@
 
 						<? else: ?>
 
-							<li><a href="/"><i class="fa fa-user"></i> <?= ucfirst(Auth::user()->username) ?></a></li>
+							<li><a href="/user"><i class="fa fa-user"></i> <?= ucfirst(Auth::user()->username) ?></a></li>
 
 						<? endif ?>
 

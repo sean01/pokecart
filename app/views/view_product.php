@@ -25,7 +25,26 @@
 		<div class="thumbnail">	
 			<h3>Description</h3>
 			<p><?= $product->description ?></p>
-		</div>		
+		</div>	
+
+		<div class="thumbnail">
+			<h3>Reviews</h3>
+
+			<div class="products">
+		<? if($comments->items) : ?>
+			<? foreach($comments->items as $comment) : ?> 
+				<div class="product thumbnail flex flex-column">
+					<h3><?= $comment->username ?></h3>
+					<p><?= $comment->comment ?></p>
+				</div>
+			</div>			
+			<? endforeach; ?> 	
+		<? else: ?>
+			<h3 class="container center">Currently no reviews posted. Why not post one!</h3>
+			<a href="/login" class="container center">Log in to comment</a>
+		<? endif ; ?>
+	</div>
+		</div>	
 	</div>
 </div>
 

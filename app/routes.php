@@ -54,9 +54,13 @@ Route::get('/search/:keywords', CONTROLLERS.'search.php');
 // CONTACT US
 
 Route::get('/contact', CONTROLLERS.'contact_us.php');
+Route::post('/contact', CONTROLLERS.'contact_us.php');
 
 
+// USER
 
+Route::get('/user/', CONTROLLERS.'user.php');
+Route::post('/user/', CONTROLLERS.'user.php');
 
 
 

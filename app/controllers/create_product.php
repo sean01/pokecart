@@ -4,7 +4,6 @@
 
 
 
-
 #2. LOAD VIEWS
 
 include VIEWS.'header.php';
