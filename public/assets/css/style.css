@@ -50,8 +50,13 @@
 	margin-left: 15px;
 }
 textarea.textArea{
-	max-width: 350px;
+	max-width: 400px;
 	height: 190px;
+}
+
+.review-post{
+	height: 100px;
+	max-width: 400px;
 }
 
 .wrapper{

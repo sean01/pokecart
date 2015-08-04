@@ -35,7 +35,11 @@
 			<?= Form::open() ?>
 				<div class="form-group">
 					<?=Form::label('message', 'New Post')?>
-					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control '])?>
+					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control review-post'])?>
+				</div>
+
+				<div class="form-group">
+					<?= Form::submit('Submit', ['class' => 'btn btn-primary'])?>
 				</div>
 			<?= Form::close() ?>
 
