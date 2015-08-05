@@ -3,9 +3,6 @@
 .flex{
 	display: flex;
 }
-.flex-start{
-	di
-}
 
 .flex-column{
 	flex-direction: column;
@@ -63,6 +60,14 @@ textarea.textArea{
 	width: 400px;
 	margin: 0 auto;
 	
+}
+
+.comment{
+	width: 100%;
+}
+
+.comments{
+	width: 100%;
 }
 
 .box{

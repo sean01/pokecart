@@ -31,7 +31,8 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 
 class Route {
 	
-	private static $params = [];
+	public static $params = [];
+	public static $iParams = [];
 	
 	public static function param($name){
 		return self::$params[$name];
@@ -45,6 +46,18 @@ class Route {
 	
 	public static function post($path, $file){
 		if($_SERVER['REQUEST_METHOD'] == 'POST'){
+			self::check($path, $file);
+		}
+	}
+	
+	public static function put($path, $file){
+		if($_SERVER['REQUEST_METHOD'] == 'PUT'){
+			self::check($path, $file);
+		}
+	}
+	
+	public static function delete($path, $file){
+		if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 			self::check($path, $file);
 		}
 	}
@@ -70,6 +83,7 @@ class Route {
 				if(substr($path[$key], 0, 1) == ':'){
 					# if it is, then add it to $params
 					self::$params[substr($path[$key], 1)] = $sp_segment;
+					self::$iParams[] = $sp_segment;
 				}else{
 					# if not, then check if the segments are the same
 					if($server_path[$key] != $path[$key]){
@@ -79,15 +93,30 @@ class Route {
 			}
 			
 			if($match){
-				# then require the file
-				require_once $file;
-				exit;
+				if(strpos($file, '->') !== false){
+					$path = explode('->', $file);
+					
+					// constructs an instance of the controller class
+					$c = new $path[0]();
+					
+					// run the function in the controller
+					call_user_func_array([$c, $path[1]], self::$iParams);
+					
+					// can't believe I forgot to do this.
+					exit;
+				} else {
+					# then require the file
+					require_once $file;
+					exit;
+				}
+				
 			}
 			
 		}
 	}
 	
 	public static function fallback($file){
+		http_response_code(404);
 		require_once $file;
 		exit;
 	}

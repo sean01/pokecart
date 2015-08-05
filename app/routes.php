@@ -12,6 +12,9 @@ Route::get('/logout', CONTROLLERS.'logout.php');
 Route::get('/login', CONTROLLERS.'login.php');
 Route::post('/login', CONTROLLERS.'login.php');
 
+Route::get('/forgot_pass', CONTROLLERS.'forgot_pass.php');
+Route::post('/forgot_pass', CONTROLLERS.'forgot_pass.php');
+
 // Route::get('/cart', CONTROLLERS.'my_cart.php');
 // Route::post('/cart', CONTROLLERS.'my_cart.php');
 
@@ -21,8 +24,6 @@ Route::get('/admin', CONTROLLERS.'admin.php');
 Route::get('/product/new', CONTROLLERS.'new_product.php');
 Route::post('/product/new', CONTROLLERS.'new_product.php');
 
-
-
 Route::get('/product/:id/edit', CONTROLLERS.'edit_product.php');
 Route::post('/product/:id/edit', CONTROLLERS.'edit_product.php');
 
@@ -30,6 +31,12 @@ Route::get('/product/:id/delete', CONTROLLERS.'delete_product.php');
 
 Route::get('/product/:id/view', CONTROLLERS.'view_product.php');
 Route::post('/product/:id/view', CONTROLLERS.'view_product.php');
+
+Route::post('/product/:id/comment', CONTROLLERS.'add_comment.php');
+
+Route::get('/delete_comment/:id', CONTROLLERS.'delete_comment.php');
+
+
 
 //CART
 
@@ -59,8 +66,15 @@ Route::post('/contact', CONTROLLERS.'contact_us.php');
 
 // USER
 
-Route::get('/user/', CONTROLLERS.'user.php');
-Route::post('/user/', CONTROLLERS.'user.php');
+Route::get('/user', CONTROLLERS.'user.php');
+Route::post('/user', CONTROLLERS.'user.php');
+
+
+
+
+
+// COMMENT
+
 
 
 

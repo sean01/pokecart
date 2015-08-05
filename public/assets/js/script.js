@@ -135,11 +135,27 @@ function initialize() {
 	});
 }
 	
+if (document.getElementById("googleMap")) {
 	google.maps.event.addDomListener(window, 'load', initialize);
+};
+
 
 
 
 	tinymce.init({
-		selector: 'textarea',
-		toolbar: 
+		selector: 'textarea'
+});
+
+
+	jQuery.validator.setDefaults({
+		debug: true,
+		success: "valid"
 	});
+		$( "#change-password-form" ).validate({
+			rules: {
+			password: "required",
+			repeat-password: {
+			equalTo: "#new-pass"
+		}
+	}
+});

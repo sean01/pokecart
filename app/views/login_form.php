@@ -1,6 +1,6 @@
 <div class="container">
 	
-	<h2 class="col-md-4 col-md-offset-4">Login</h2>
+	<h2 class="col-md-4 col-md-offset-4 push-top">Login</h2>
 
 	<hr>
 
@@ -19,6 +19,13 @@
 		<div class="form-group">
 			<?= Form::submit('Login', ['class' => 'btn btn-primary']) ?>
 		</div>
+
+		<a href="/forgot_pass" class="flex-1 push-right">Forgot Password</a>
+		<a href="/register" class="flex-1">New user?</a>
 	<?= Form::close() ?>
+
+
+
+
 
 </div>

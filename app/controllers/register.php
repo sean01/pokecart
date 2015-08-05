@@ -12,7 +12,7 @@ if(Input::posted()){
 
 	$user->fill(Input::all());
 
-	$user-> password = password_hash($user->password, PASSWORD_DEFAULT);
+	$user->password = password_hash($user->password, PASSWORD_DEFAULT);
 
 	$user->save();
 

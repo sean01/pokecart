@@ -16,7 +16,7 @@
 		<div class="container">
 
 			
-			<h1 class="navbar-brand center">Gotta Catch 'Em All!</a></h1>
+			<h1 class="navbar-brand center"><a href="/home" class="navbar-brand center">Gotta Catch 'Em All!</a></h1>
 
 				<ul class="nav nav-pills navbar-right center">
 

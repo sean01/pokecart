@@ -27,12 +27,12 @@
 			<p><?= $product->description ?></p>
 		</div>	
 
-		<div class="thumbnail">
+		<div class="thumbnail comments">
 			<h3>Reviews</h3>
 
-			<div class="products">
-
-			<?= Form::open() ?>
+		
+		<? if (Auth::is_logged_in()): ?>
+			<?= Form::open('/product/'. $product->id .'/comment') ?>
 				<div class="form-group">
 					<?=Form::label('message', 'New Post')?>
 					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control review-post'])?>
@@ -42,15 +42,18 @@
 					<?= Form::submit('Submit', ['class' => 'btn btn-primary'])?>
 				</div>
 			<?= Form::close() ?>
+		<? endif ?>
 
 		<? if(count($product->comments)) : ?>
 			<? foreach($product->comments as $comment) : ?> 
-				<div class="thumbnail">
+				
+				<div class="thumbnail comment">
 					<h3><?= ucfirst($comment->author->username)  ?></h3>
 					<p>at <?= date('g:ia y/m/d', strtotime($comment->date_time)) ?></p>
-					<p><?= $comment->comment ?></p>
+					<p><?= $comment->content ?></p>						
 				</div>
-			</div>			
+				
+					
 			<? endforeach; ?> 	
 		<? else: ?>
 			<h3 class="container center">Currently no reviews posted. Why not post one?</h3>

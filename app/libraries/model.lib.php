@@ -424,7 +424,7 @@ class Field_Provider {
 
 class Model_Provider {
 	
-	private static $queries = [];
+	public static $queries = [];
 	
 	public static function set($query, $data){
 		self::$queries[$query] = $data;

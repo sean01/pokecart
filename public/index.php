@@ -34,6 +34,7 @@ require_once MODELS.'user.model.php';
 require_once MODELS.'product.model.php';
 require_once MODELS.'products.collection.php';
 require_once MODELS.'comment.model.php';
+require_once MODELS.'comments.collection.php';
 
 #load helpers & routes
 

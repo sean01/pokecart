@@ -18,16 +18,20 @@ class User extends model{
 		# if a user was found
 		if(!$user){
 			return false;
-			}
-			# check if both passwords are the same
-			
+		}
+		# check if both passwords are the same
+		
 
-			if(password_verify($this->password, $user['password'])){
-				$this->fill($user);
-				return true;
-			}else{
-				return false;
-			}
+		if(password_verify($this->password, $user['password'])){
+			$this->fill($user);
+			return true;
+		}else{
+			return false;
 		}
 	}
+
+	public function comments(){
+		return $this->hasMany('Comment', 'user_id');
+	}
+}
 
