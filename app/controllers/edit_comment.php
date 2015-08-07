@@ -8,23 +8,29 @@ $comment = new Comment();
 
 $comment->load(Route::param('id'));
 
-if(Input::posted()){	
-
-	$comment->fill(Input::all());
-
-	$comment->save();
+if($comment->user_id == Auth::user_id()){
+	
+	if(Input::posted()){	
 
 	
+	$comment->content = Input::get('message');
+
+	$comment->save();
+  
+	URL::restore();
+	
+	}
 }
+
 
 Sticky::set('message', $comment->content);
 
 
 
-URL::restore();
+
 
 #2. LOAD VIEWS
 
 include VIEWS.'header.php';
-include VIEWS.'view_product.php';
+include VIEWS.'edit_comment.php';
 include VIEWS.'footer.php';

@@ -15,20 +15,28 @@
 			<div class="change-password">
 				<h4>Change Password</h4>
 
-				<?= Form::open(['class' => 'col-md-4 col-md-offset-4', 'id' => 'change-password-form']) ?>
+				<?php if ($error): ?>
+					<p class="alert alert-danger"><?= $error ?></p>
+				<?php endif ?>
+
+				<?php if ($success): ?>
+					<p class="alert alert-info"><?= $success ?></p>
+				<?php endif ?>
+
+				<?= Form::open('', 'post', ['id' => 'change-password-form']) ?>
 					<div class="form-group">
-						<?=Form::label('password', 'Existing Password')?>
-						<?=Form::password('password', Sticky::get(''), ['class' => 'form-control', 'id' => 'password'])?>
+						<?=Form::label('old_password', 'Existing Password')?>
+						<?=Form::password('old_password', '', ['class' => 'form-control'])?>
 					</div>
 
 					<div class="form-group">
-						<?=Form::label('new_pass', 'New Password')?>
-						<?=Form::password('new_pass', Sticky::get(''), ['class' => 'form-control',  'id' => 'new-pass'])?>
+						<?=Form::label('password', 'New Password')?>
+						<?=Form::password('password', '', ['class' => 'form-control'])?>
 					</div>
 
 					<div class="form-group">
 						<?=Form::label('repeat_password', 'Repeat Password')?>
-						<?=Form::password('repeat_password', Sticky::get(''), ['class' => 'form-control', 'id' => 'repeat_password'])?>
+						<?=Form::password('repeat_password', '', ['class' => 'form-control'])?>
 					</div>
 
 					<div class="form-group">

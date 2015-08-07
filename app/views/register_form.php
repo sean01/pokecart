@@ -4,7 +4,7 @@
 
 	<hr>
 
-	<?= Form::open('', 'post', ['class' => 'col-md-4 col-md-offset-4'])?>
+	<?= Form::open('', 'post', ['class' => 'col-md-4 col-md-offset-4', 'id' => 'register-form'])?>
 		
 		<div class="form-group">
 			<?=Form::label('username', 'Username:')?>

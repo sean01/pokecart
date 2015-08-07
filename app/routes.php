@@ -35,7 +35,9 @@ Route::post('/product/:id/view', CONTROLLERS.'view_product.php');
 Route::post('/product/:id/comment', CONTROLLERS.'add_comment.php');
 
 Route::get('/delete_comment/:id', CONTROLLERS.'delete_comment.php');
+
 Route::get('/edit_comment/:id', CONTROLLERS.'edit_comment.php');
+Route::post('/edit_comment/:id', CONTROLLERS.'edit_comment.php');
 
 
 

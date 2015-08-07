@@ -35,7 +35,7 @@
 			<?= Form::open('/product/'. $product->id .'/comment') ?>
 				<div class="form-group">
 					<?=Form::label('message', 'New Post')?>
-					<?=Form::textarea('message', Sticky::get('message'), ['class' => 'form-control review-post'])?>
+					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control review-post'])?>
 				</div>
 
 				<div class="form-group">

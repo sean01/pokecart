@@ -4,9 +4,16 @@ Auth::kickout('/home');
 
 if(Input::posted()){
 
-	Auth::user()->password = password_hash(Input::get('password'), PASSWORD_DEFAULT);
+	if(password_verify(Input::get('old_password'), Auth::user()->password)){
+		Auth::user()->password = password_hash(Input::get('password'), PASSWORD_DEFAULT);
 
-	Auth::user()->save();	
+		Auth::user()->save();
+		$success = 'Password was updated successfully.';
+	} else {
+		$error = 'The old password was wrong.';
+	}
+
+		
 }
 
 $user = new User();
