@@ -447,3 +447,261 @@
 [22-Jul-2015 18:07:46 Pacific/Auckland] PHP Warning:  Missing argument 3 for Cart::set_quantity(), called in /home/seanrogers/cart/app/controllers/cart_remove_notification.php on line 6 and defined in /home/seanrogers/cart/app/libraries/cart.lib.php on line 79
 [22-Jul-2015 18:07:46 Pacific/Auckland] PHP Warning:  Missing argument 3 for Cart::set_quantity(), called in /home/seanrogers/cart/app/controllers/cart_remove_notification.php on line 6 and defined in /home/seanrogers/cart/app/libraries/cart.lib.php on line 79
 [22-Jul-2015 18:08:16 Pacific/Auckland] PHP Warning:  Missing argument 3 for Cart::set_quantity(), called in /home/seanrogers/cart/app/controllers/cart_remove_notification.php on line 6 and defined in /home/seanrogers/cart/app/libraries/cart.lib.php on line 79
+[29-Jul-2015 21:40:51 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[29-Jul-2015 21:40:51 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[29-Jul-2015 21:40:54 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[29-Jul-2015 21:40:54 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[29-Jul-2015 21:41:07 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[29-Jul-2015 21:41:07 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ',' in /home/seanrogers/cart/app/routes.php on line 54
+[31-Jul-2015 04:07:40 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/contact_us.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:07:40 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/contact_us.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:16 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/contact_us.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:16 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/contact_us.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:18 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/contact_us.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:18 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/contact_us.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:30 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/contact_us.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:09:30 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/contact_us.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 83
+[31-Jul-2015 04:11:44 Pacific/Auckland] PHP Parse error:  syntax error, unexpected end of file in /home/seanrogers/cart/app/controllers/contact_us.php on line 9
+[31-Jul-2015 05:32:09 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/seanrogers/cart/app/views/contact_us.php on line 13
+[31-Jul-2015 05:32:47 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/seanrogers/cart/app/views/contact_us.php on line 18
+[31-Jul-2015 05:32:50 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/seanrogers/cart/app/views/contact_us.php on line 18
+[31-Jul-2015 15:50:15 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 25 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 15:50:22 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 25 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 15:51:36 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 25 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 15:55:40 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 25 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 16:25:37 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '[' in /home/seanrogers/cart/app/views/login_form.php on line 16
+[31-Jul-2015 16:25:38 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '[' in /home/seanrogers/cart/app/views/login_form.php on line 16
+[31-Jul-2015 16:25:57 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '[' in /home/seanrogers/cart/app/views/login_form.php on line 16
+[31-Jul-2015 16:26:16 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 20 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 16:36:34 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 20 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[31-Jul-2015 16:39:54 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/login_form.php on line 20 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[02-Aug-2015 23:54:17 Pacific/Auckland] PHP Parse error:  syntax error, unexpected end of file in /home/seanrogers/cart/app/views/view_product.php on line 35
+[02-Aug-2015 23:54:39 Pacific/Auckland] PHP Parse error:  syntax error, unexpected end of file in /home/seanrogers/cart/app/views/view_product.php on line 36
+[02-Aug-2015 23:54:56 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ':', expecting ';' in /home/seanrogers/cart/app/views/view_product.php on line 20
+[03-Aug-2015 04:10:17 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/seanrogers/cart/app/views/view_product.php on line 41
+[03-Aug-2015 04:10:22 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/seanrogers/cart/app/views/view_product.php on line 41
+[03-Aug-2015 04:11:04 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/seanrogers/cart/app/views/view_product.php on line 41
+[03-Aug-2015 04:13:25 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/seanrogers/cart/app/views/view_product.php on line 39
+[03-Aug-2015 16:45:43 Pacific/Auckland] PHP Fatal error:  Access level to User::$table must be public (as in class Model) in /home/seanrogers/cart/app/models/user.model.php on line 32
+[03-Aug-2015 16:45:43 Pacific/Auckland] PHP Fatal error:  Access level to User::$table must be public (as in class Model) in /home/seanrogers/cart/app/models/user.model.php on line 32
+[03-Aug-2015 16:47:12 Pacific/Auckland] PHP Fatal error:  Class 'Comment' not found in /home/seanrogers/cart/app/libraries/collection.lib.php on line 58
+[03-Aug-2015 18:56:10 Pacific/Auckland] PHP Warning:  Missing argument 2 for Form::label(), called in /home/seanrogers/cart/app/views/view_product.php on line 37 and defined in /home/seanrogers/cart/app/libraries/form.lib.php on line 111
+[03-Aug-2015 20:40:23 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[03-Aug-2015 20:40:33 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[03-Aug-2015 20:40:41 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:31:31 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:31:37 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:32:57 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:33:28 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:36:51 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:36:56 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:37:06 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:43:18 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 18:43:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[04-Aug-2015 19:27:02 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 15:55:45 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 15:55:49 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 15:55:51 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:19 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:22 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:22 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:22 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:22 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:22 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:41 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:41 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:42 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:42 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:42 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:43 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:45 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:28:46 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:39:10 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:39:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:39:56 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:39:59 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 16:39:59 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:03:27 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:32 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:33 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:34 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:34 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:35 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:35 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:36 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:37 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:40 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:45 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:52 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:52 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:52 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:54 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:54 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:04:55 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:00 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:02 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:03 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:04 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:06 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:08 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:13 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:14 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:16 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:17 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:28 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:29 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:31 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:05:56 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:07:14 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:07:24 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:07:38 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:08:03 Pacific/Auckland] PHP Fatal error:  Cannot access private property Model_Provider::$queries in /home/seanrogers/cart/app/libraries/model.lib.php on line 158
+[05-Aug-2015 17:08:04 Pacific/Auckland] PHP Fatal error:  Cannot access private property Model_Provider::$queries in /home/seanrogers/cart/app/libraries/model.lib.php on line 158
+[05-Aug-2015 17:08:10 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:08:12 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:08:27 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 163
+[05-Aug-2015 17:09:53 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:09:56 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:10:49 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:24 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:25 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:26 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:26 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:28 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:39 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:11:49 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:13:19 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:14:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:17:51 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:18:05 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:18:17 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:19:56 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:20:59 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:21:39 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:21:41 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 17:42:36 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:43:17 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:43:47 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:43:49 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:43:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:44:03 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:44:05 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:44:21 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:44:23 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:44:43 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:46:22 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:46:25 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 4
+[05-Aug-2015 17:47:57 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:48:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:49:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:49:50 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:50:24 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:55:24 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:55:27 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:55:51 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:55:53 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 5
+[05-Aug-2015 17:58:29 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 16
+[05-Aug-2015 18:00:18 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:00:20 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:00:23 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:00:26 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:01:01 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:04:17 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/seanrogers/cart/app/controllers/user.php on line 15
+[05-Aug-2015 18:04:29 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:04:31 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:05:47 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:05:55 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:05:58 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:06:26 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:06:35 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:08:05 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:08:31 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:09:51 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:09:53 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:14:40 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:17:13 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:17:17 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:17:21 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:18:01 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:18:37 Pacific/Auckland] PHP Fatal error:  Class 'Comments_Collection' not found in /home/seanrogers/cart/app/controllers/user.php on line 12
+[05-Aug-2015 18:19:41 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:20:30 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '$comments' (T_VARIABLE) in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:21:05 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'as' (T_AS) in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:21:17 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:21:24 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '$comments' (T_VARIABLE) in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:22:07 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/seanrogers/cart/app/controllers/user.php on line 13
+[05-Aug-2015 18:22:12 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '$comments' (T_VARIABLE) in /home/seanrogers/cart/app/views/user.php on line 22
+[05-Aug-2015 18:30:23 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:30:31 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:30:50 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:30:55 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 18:43:06 Pacific/Auckland] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM) in /home/seanrogers/cart/app/routes.php on line 105
+[05-Aug-2015 18:44:29 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:44:29 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:44:32 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:44:32 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:46:29 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:46:29 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:46:52 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:46:52 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:47:14 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:47:14 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:47:19 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten-password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:47:19 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten-password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:49:19 Pacific/Auckland] PHP Warning:  include(../app/views/forgot_pass.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/controllers/forgotten_password.php on line 10
+[05-Aug-2015 18:49:19 Pacific/Auckland] PHP Warning:  include(): Failed opening '../app/views/forgot_pass.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/controllers/forgotten_password.php on line 10
+[05-Aug-2015 18:49:59 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:49:59 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:01 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:01 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:03 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:03 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:16 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:16 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:22 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:22 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:29 Pacific/Auckland] PHP Warning:  require_once(../app/controllers/forgotten_password.php): failed to open stream: No such file or directory in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:50:29 Pacific/Auckland] PHP Fatal error:  require_once(): Failed opening required '../app/controllers/forgotten_password.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/seanrogers/cart/app/libraries/route.lib.php on line 109
+[05-Aug-2015 18:55:09 Pacific/Auckland] PHP Fatal error:  Call to a member function to_array() on a non-object in /home/seanrogers/cart/app/libraries/model.lib.php on line 161
+[05-Aug-2015 19:00:12 Pacific/Auckland] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/seanrogers/cart/app/controllers/user.php on line 20
+[05-Aug-2015 19:00:54 Pacific/Auckland] PHP Warning:  Missing argument 2 for Model::belongsToMany(), called in /home/seanrogers/cart/app/models/user.model.php on line 34 and defined in /home/seanrogers/cart/app/libraries/model.lib.php on line 332
+[05-Aug-2015 19:52:41 Pacific/Auckland] PHP Parse error:  syntax error, unexpected ''id'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' in /home/seanrogers/cart/app/views/user.php on line 18
+[05-Aug-2015 20:04:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:40 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:04:55 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:08:38 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:08:38 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:08:38 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:08:38 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189
+[05-Aug-2015 20:08:38 Pacific/Auckland] PHP Warning:  Invalid argument supplied for foreach() in /home/seanrogers/cart/app/libraries/model.lib.php on line 189

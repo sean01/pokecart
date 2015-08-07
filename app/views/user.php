@@ -22,13 +22,13 @@
 					</div>
 
 					<div class="form-group">
-						<?=Form::label('password', 'New Password')?>
-						<?=Form::password('password', Sticky::get(''), ['class' => 'form-control',  'id' => 'new-pass'])?>
+						<?=Form::label('new_pass', 'New Password')?>
+						<?=Form::password('new_pass', Sticky::get(''), ['class' => 'form-control',  'id' => 'new-pass'])?>
 					</div>
 
 					<div class="form-group">
-						<?=Form::label('repeat-password', 'Repeat Password')?>
-						<?=Form::password('repeat-password', Sticky::get(''), ['class' => 'form-control', 'id' => 'repeat-new-pass'])?>
+						<?=Form::label('repeat_password', 'Repeat Password')?>
+						<?=Form::password('repeat_password', Sticky::get(''), ['class' => 'form-control', 'id' => 'repeat_password'])?>
 					</div>
 
 					<div class="form-group">

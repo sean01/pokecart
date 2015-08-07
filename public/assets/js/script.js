@@ -154,7 +154,7 @@ if (document.getElementById("googleMap")) {
 		$( "#change-password-form" ).validate({
 			rules: {
 			password: "required",
-			repeat-password: {
+			repeat_password: {
 			equalTo: "#new-pass"
 		}
 	}

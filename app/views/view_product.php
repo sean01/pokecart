@@ -35,7 +35,7 @@
 			<?= Form::open('/product/'. $product->id .'/comment') ?>
 				<div class="form-group">
 					<?=Form::label('message', 'New Post')?>
-					<?=Form::textarea('message', Sticky::get(''), ['class' => 'form-control review-post'])?>
+					<?=Form::textarea('message', Sticky::get('message'), ['class' => 'form-control review-post'])?>
 				</div>
 
 				<div class="form-group">
@@ -44,13 +44,25 @@
 			<?= Form::close() ?>
 		<? endif ?>
 
-		<? if(count($product->comments)) : ?>
-			<? foreach($product->comments as $comment) : ?> 
+		<? if(count($product->comments(['deleted' => '0']))) : ?>
+			<? foreach($product->comments(['deleted' => '0']) as $comment) : ?> 
 				
 				<div class="thumbnail comment">
 					<h3><?= ucfirst($comment->author->username)  ?></h3>
 					<p>at <?= date('g:ia y/m/d', strtotime($comment->date_time)) ?></p>
-					<p><?= $comment->content ?></p>						
+					<p><?= $comment->content ?></p>	
+				
+				<? if(Auth::user_id() == $comment->user_id) : ?>
+				
+					
+						<a href="/delete_comment/<?= $comment->id ?>" class="white btn btn-danger">Delete</a>
+					
+					
+						<a href="/edit_comment/<?= $comment->id ?>" class="white btn btn-success">Edit</a>
+					
+			
+				<? endif; ?>
+			
 				</div>
 				
 					

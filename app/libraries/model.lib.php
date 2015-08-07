@@ -157,6 +157,9 @@ class Model {
 			
 			$obj = Model_Provider::get($q);
 			// echo "<div class='alert alert-success'>$q</div>";
+
+			// fix that weird ass bug
+			if(is_array($obj)) $obj = $obj[0];
 			
 			$this->fill($obj->to_array());
 			

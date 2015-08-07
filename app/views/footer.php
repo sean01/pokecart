@@ -24,11 +24,8 @@
 				</div>
 					
 				<div class="flex-1">
-					<p><strong>Help</strong></p>
-					
-						<a href="/contact">Contact Us</a>
-					
-					
+					<p><strong>Help</strong></p>					
+						<a href="/contact">Contact Us</a>					
 				</div>
 			</div>
 		</div>
