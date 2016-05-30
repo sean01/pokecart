@@ -5,4 +5,4 @@ Auth::log_out();
 
 
 # Redirect to the home page
-URL::redirect('/');
+URL::redirect('/pokecart/');

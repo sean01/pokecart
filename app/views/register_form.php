@@ -25,7 +25,7 @@
 			<?= Form::submit('Register', ['class' => 'btn btn-primary'])?>
 		</div>
 
-		<a href="/login">Existing user?</a>
+		<a href="/pokecart/login">Existing user?</a>
 
 
 	<?= Form::close() ?>

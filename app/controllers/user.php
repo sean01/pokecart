@@ -1,6 +1,6 @@
 <?php 
 
-Auth::kickout('/home');
+Auth::kickout('/pokecart/');
 
 if(Input::posted()){
 
@@ -10,7 +10,7 @@ if(Input::posted()){
 		Auth::user()->save();
 		$success = 'Password was updated successfully.';
 	} else {
-		$error = 'The old password was wrong.';
+		$error = 'The old password was incorrect, please try again.';
 	}
 
 		

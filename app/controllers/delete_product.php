@@ -1,7 +1,7 @@
 <?php 
 
 #1. 
-Auth::kickout_non_admin('/');
+Auth::kickout_non_admin('/pokecart/');
 
 $product = new Product();
 
@@ -11,4 +11,4 @@ $product->delete();
 
 #2. REDIRECT
 
-URL::redirect('/admin');
+URL::redirect('/pokecart/admin');

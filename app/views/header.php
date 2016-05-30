@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
 	<meta charset="UTF-8">
 	<title>Catch 'Em All!</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/assets/css/animate.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	
 </head>
 <body>
 <header>
 	<div class="navbar navbar-default">
 
-		<div class="container">
+		<h1 class="navbar-brand center"><a href="/pokecart/" class="navbar-brand center">Gotta Catch 'Em All!</a></h1>	
+
+			<div class="container">
 
 			
-			<h1 class="navbar-brand center"><a href="/home" class="navbar-brand center">Gotta Catch 'Em All!</a></h1>
+
 
 				<ul class="nav nav-pills navbar-right center">
 
-					<li><a href="/"><i class="fa fa-home"></i>  Home</a></li>
+					<li><a href="/pokecart/"><i class="fa fa-home"></i>  Home</a></li>
 
 					<? if(Auth::is_logged_in()): ?>
 
-						<li><a href="/cart"><i class="fa fa-shopping-cart"></i>  My Cart <span class="badge cart-count"><?= Cart::get_total() ?></span></a></li>
+						<li><a href="/pokecart/cart"><i class="fa fa-shopping-cart"></i>  My Cart <span class="badge cart-count"><?= Cart::get_total() ?></span></a></li>
 
 						<? if(Auth::is_admin()): ?>
 
-							<li><a href="/admin"><i class="fa fa-user"></i> Admin</a></li>
+							<li><a href="/pokecart/admin"><i class="fa fa-user"></i> Admin</a></li>
 
 						<? else: ?>
 
-							<li><a href="/user"><i class="fa fa-user"></i> <?= ucfirst(Auth::user()->username) ?></a></li>
+							<li><a href="/pokecart/user"><i class="fa fa-user"></i> <?= ucfirst(Auth::user()->username) ?></a></li>
 
 						<? endif ?>
 
-						<li><a href="/logout"><i class="fa fa-reply"></i>  Log out</a></li>
+						<li><a href="/pokecart/logout"><i class="fa fa-reply"></i>  Log out</a></li>
 
 						
 					<? else: ?>
 
-						<li><a href="/register"><i class="fa fa-user-plus"></i>  Register</a></li>
-						<li><a href="/login"><i class="fa fa-share"></i>  Login</a></li>
+						<li><a href="/pokecart/register"><i class="fa fa-user-plus"></i>  Register</a></li>
+						<li><a href="/pokecart/login"><i class="fa fa-share"></i>  Login</a></li>
 
 					<? endif ?>
 
 					<li>
-						<form class="navbar-form navbar-left" action="/search.php">
+						<form class="navbar-form navbar-left" action="/pokecart/search.php">
 							
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search" name="keywords" value="<?= Route::param('keywords') ?>">
@@ -71,7 +74,7 @@
 								</div>							
 								
 								<div class="whiteHover flex flex-j-between">
-									<h6><a href="/cart" class="flex-1">View Cart</a></h6>
+									<h6><a href="/pokecart/cart" class="flex-1">View Cart</a></h6>
 									<h6><a href="" class="flex-1 productRemove remove-from-cart">Remove Cart<span class="productQty"></span></a></h6>
 								</div>
 								
@@ -104,7 +107,6 @@
 						</li>			
 						<li><a href="">Accessories</a></li>
 						<li><a href="">Pokemon</a></li>			
-						<li><a href="">Accessories</a></li>
 						<li><a href="">Home & Decor</a></li>				
 						<li><a href="">TMs/HMs</a></li>				
 						<li><a href="">Battle Items</a></li>				

@@ -3,4 +3,4 @@
 Cart::clear_cart();
 
 
-URL::redirect('/');
+URL::redirect('/pokecart/');

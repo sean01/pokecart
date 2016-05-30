@@ -3,7 +3,7 @@
 
 #1. LOGIC
 
-Auth::kickout_non_admin('/');
+Auth::kickout_non_admin('/pokecart/');
 
 
 

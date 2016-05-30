@@ -2,7 +2,7 @@
 
 #1. LOGIC
 
-Auth::kickout_non_admin('/');
+Auth::kickout_non_admin('/pokecart/');
 
 $product = new Product();
 
@@ -19,7 +19,7 @@ if(Input::posted()){
 	$product->fill(Input::all());
 
 	if($_FILES){
-		$files = upload::to_folder('assets/uploads/');
+		$files = upload::to_folder('/pokecart/assets/uploads/');
 
 		if($files[0]['error_message'] == false){
 			$product->image = $files[0]['filepath'];
@@ -28,7 +28,7 @@ if(Input::posted()){
 
 	$product->save();
 
-	URL::redirect('/admin');
+	URL::redirect('/pokecart/admin');
 }
 
 

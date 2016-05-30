@@ -6,7 +6,7 @@
 	<div class="flex flex-j-between flex-a-center">
 		<h3>Edit Products</h3>
 		
-		<a href="/product/new" class="btn btn-primary">Add Product</a>
+		<a href="/pokecart/product/new" class="btn btn-primary">Add Product</a>
 	</div>
 
 	<table class="table table-striped">
@@ -23,7 +23,7 @@
 		<? foreach($products->items as $product): ?>
 		<tr>
 			<td width="100">
-				<img src="/<?= $product->image ?>" width="94" height="94">
+				<img src="/pokecart/<?= $product->image ?>" width="94" height="94">
 			</td>
 			<td class="v-center" >
 				<?= $product->name ?>
@@ -35,8 +35,8 @@
 				$<?= number_format($product->price, 2, '.', '') ?>
 			</td>
 			<td width="150"> 
-				<a href="/product/<?=$product->id ?>/edit" class="btn btn-info">Edit</a>
-				<a href="/product/<?=$product->id ?>/delete" class="btn btn-danger">Delete</a>
+				<a href="/pokecart/product/<?=$product->id ?>/edit" class="btn btn-info">Edit</a>
+				<a href="/pokecart/product/<?=$product->id ?>/delete" class="btn btn-danger">Delete</a>
 			</td> 
 
 		</tr>

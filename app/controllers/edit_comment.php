@@ -2,7 +2,7 @@
 
 #1. LOGIC
 
-Auth::kickout('/');
+Auth::kickout('/pokecart/');
 
 $comment = new Comment();
 

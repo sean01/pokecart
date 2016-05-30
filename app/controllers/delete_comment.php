@@ -1,6 +1,6 @@
 <?php 
 
-Auth::kickout('/');
+Auth::kickout('/pokecart/');
 
 $comment = new Comment();
 $comment->load(Route::param('id'));

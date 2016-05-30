@@ -20,8 +20,8 @@
 			<?= Form::submit('Login', ['class' => 'btn btn-primary']) ?>
 		</div>
 
-		<a href="/forgot_pass" class="flex-1 push-right">Forgot Password</a>
-		<a href="/register" class="flex-1">New user?</a>
+		<a href="/pokecart/forgot_pass" class="flex-1 push-right">Forgot Password</a>
+		<a href="/pokecart/register" class="flex-1">New user?</a>
 	<?= Form::close() ?>
 
 

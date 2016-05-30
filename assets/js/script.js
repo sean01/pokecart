@@ -38,9 +38,9 @@ $(function() {
 				//AJAX stuff here?
 				// $('.notification-cart').data()
 				$('.productName').text(data.name);
-				$('.productImg').attr('src', '/' + data.image);
-				$('.productLink').attr('href', '/product/' + data.id + '/view');
-				$('.productRemove').attr('href', '/cart/remove/' + data.id + '/notification');
+				$('.productImg').attr('src', '/pokecart/' + data.image);
+				$('.productLink').attr('href', '/pokecart/product/' + data.id + '/view');
+				$('.productRemove').attr('href', '/pokecart/cart/remove/' + data.id + '/notification');
 				$('.productPrice').text('Price: $' + data.price);
 				$('.productSub').text('Cart Subtotal: $' + data.sub);
 				$('.productQty').text(' (' + data.qty + ')');
@@ -175,7 +175,7 @@ $(function() {
 			username: {
 				required: true,
 				minlength: 4,
-				maxlength: 12
+				maxlength: 14
 			},
 			email: {
 				required: true,

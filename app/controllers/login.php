@@ -5,7 +5,7 @@
 // If already logged in, and you try to get to login page.
 // Will redirect you to home.
 if(Auth::is_logged_in()){
-	URL::redirect('/');
+	URL::redirect('/pokecart/');
 }
 
 
@@ -22,7 +22,7 @@ if(Input::posted()){
 		Auth::log_in($user->id, $user->is_admin);
 
 		URL::restore();
-		URL::redirect('/admin');
+		URL::redirect('/pokecart/admin');
 	}
 }
 

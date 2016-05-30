@@ -21,5 +21,5 @@ if(AJAX){
 	]);
 }else{
 
-	URL::redirect('/');
+	URL::redirect('/pokecart/');
 }

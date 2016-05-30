@@ -3,7 +3,7 @@
 #1. Logic
 
 if(Auth::is_logged_in()){
-	URL::redirect('/');
+	URL::redirect('/pokecart/');
 }
 
 if(Input::posted()){
@@ -18,7 +18,7 @@ if(Input::posted()){
 
 	Auth::log_in($user->id);
 
-	URL::redirect('/home');
+	URL::redirect('/pokecart/');
 
 }
 

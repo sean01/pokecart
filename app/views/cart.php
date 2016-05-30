@@ -20,12 +20,12 @@
 
 			<tr>
 				<td>
-					<img src="<?= $product->image ?>" width="94" height="94">
+					<img src="/pokecart/<?= $product->image ?>" width="94" height="94">
 				</td>
 				<td><?= $product->name ?></td>
 				<td>$<?= $product->price ?></td>
 				<td>
-					<?= Form::open('/cart/update/'.$product->id) ?>
+					<?= Form::open('/pokecart/cart/update/'.$product->id) ?>
 
 					<?= Form::number('quantity', $product->quantity) ?>
 
@@ -36,7 +36,7 @@
 				<td>$<?= $product->quantity * $product->price ?></td>
 				
 				<td>
-					<a href="/cart/remove/<?= $product->id ?>" class="btn btn-danger">Remove</a>
+					<a href="/pokecart/cart/remove/<?= $product->id ?>" class="btn btn-danger">Remove</a>
 				</td>
 			</tr>
 
@@ -58,8 +58,8 @@
 
 	
 		<tr>
-			<td colspan="5"><a href="/cart/clear" class="btn btn-warning">Clear Cart</a></td>
-			<td><a href="/cart/checkout" class="btn btn-success">Checkout</a></td>
+			<td colspan="5"><a href="/pokecart/cart/clear" class="btn btn-warning">Clear Cart</a></td>
+			<td><a href="/pokecart/cart/checkout" class="btn btn-success">Checkout</a></td>
 			
 		</tr>
 	</table>

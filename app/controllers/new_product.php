@@ -2,7 +2,7 @@
 
 #1. LOGIC
 
-Auth::kickout_non_admin('/');
+Auth::kickout_non_admin('/pokecart/');
 
 if(Input::posted()){
 
@@ -22,7 +22,7 @@ if(Input::posted()){
 
 	$product->save();
 
-	URL::redirect('/admin');
+	URL::redirect('/pokecart/admin');
 }
 
 $title = 'Add Product'. $product->name;

@@ -1,5 +1,5 @@
 <?php 
-Auth::kickout('/product/'.Route::param('id').'/view');
+Auth::kickout('/pokecart/product/'.Route::param('id').'/view');
 
 $comment = new Comment();
 
@@ -13,4 +13,4 @@ $comment->date_time = date('Y-m-d H:i:s');
 
 $comment->save();
 
-URL::redirect('/product/'.Route::param('id').'/view');
+URL::redirect('/pokecart/product/'.Route::param('id').'/view');

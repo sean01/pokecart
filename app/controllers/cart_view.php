@@ -2,7 +2,7 @@
 
 #1
 
-Auth::kickout('/login');
+Auth::kickout('/pokecart/login');
 
 
 #2
